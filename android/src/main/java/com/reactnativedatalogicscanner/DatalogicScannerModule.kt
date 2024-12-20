@@ -199,7 +199,8 @@ class DatalogicScannerModule(reactContext: ReactApplicationContext) :
     ScannerProperties.edit(barcodeManager).apply {
       ean13.sendChecksum.set(true)
       code39.code32.set(false)
-      goodread.goodReadEnable.set(true)
+      //goodread.goodReadEnable.set(true)
+      goodread.goodReadEnable.set(false)
       displayNotification.enable.set(false)
       store(barcodeManager, true)
     }
